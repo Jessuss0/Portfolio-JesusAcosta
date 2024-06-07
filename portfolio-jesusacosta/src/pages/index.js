@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/navBar/navBar";
 import About from "@/components/about/About";
@@ -11,24 +10,17 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div>
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
+      <NavBar />
       <main
         className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
       >
         <div>
           <h2>Hi i'am Jesus Acosta Full stack web Developer!</h2>
         </div>
-        <About/>
-        <Proyects/>
-        <Experience/>
-        <Contact/>
+        <About />
+        <Experience />
+        <Proyects />
+        <Contact />
       </main>
     </div>
   );
