@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Home from "@/components/home/home";
 import NavBar from "@/components/navBar/navBar";
 import About from "@/components/about/About";
 import Proyects from "@/components/proyects/proyects";
@@ -7,21 +8,29 @@ import Contact from "@/components/contact/contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function app() {
   return (
     <div>
       <NavBar />
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-      >
-        <div>
-          <h2>Hi i'am Jesus Acosta Full stack web Developer!</h2>
-        </div>
+      <section id="Home">
+        <Home />
+      </section>
+
+      <section id="About">
         <About />
+      </section>
+
+      <section id="Experience">
         <Experience />
+      </section>
+
+      <section id="Proyects">
         <Proyects />
+      </section>
+
+      <section id="Contact">
         <Contact />
-      </main>
+      </section>
     </div>
   );
 }

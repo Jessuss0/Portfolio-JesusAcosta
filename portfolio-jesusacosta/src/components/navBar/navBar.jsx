@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between items-center p-4 bg-transparent h-20">
-      <div className="">
+    <div className="flex justify-between items-center p-4 bg-transparent h-20 font-semibold">
+      <div>
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert "
           src="/next.svg"
