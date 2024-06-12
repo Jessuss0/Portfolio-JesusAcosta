@@ -14,6 +14,84 @@ import { FaGithub } from "react-icons/fa";
 import { SiVisualstudiocode } from "react-icons/si";
 import { FaNpm } from "react-icons/fa";
 import { SiSequelize } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+
+const sections = [
+  {
+    title: "Frontend",
+    technologies: [
+      { icon: <FaHtml5 size={30} className="text-orange-700" />, name: "HTML" },
+      { icon: <FaCss3Alt size={30} className="text-blue-700" />, name: "CSS" },
+      { icon: <FaReact size={30} className="text-blue-500" />, name: "React" },
+      {
+        icon: <IoLogoJavascript size={30} className="text-yellow-500" />,
+        name: "JavaScript",
+      },
+      {
+        icon: <SiTypescript size={30} className="text-blue-400" />,
+        name: "TypeScript",
+      },
+      {
+        icon: <SiNextdotjs size={30} className="text-white" />,
+        name: "Next.js",
+      },
+      {
+        icon: <RiTailwindCssFill size={30} className="text-cyan-400" />,
+        name: "TailwindCSS",
+      },
+      {
+        icon: <SiRedux size={30} className="text-purple-900" />,
+        name: "Redux",
+      },
+    ],
+  },
+  {
+    title: "Backend",
+    technologies: [
+      { icon: <FaNodeJs size={30} className="text-green-800" />, name: "Node" },
+      { icon: <SiExpress size={30} className="text-white" />, name: "Express" },
+      {
+        icon: <BiLogoPostgresql size={30} className="text-blue-400" />,
+        name: "PostgreSQL",
+      },
+      {
+        icon: <SiSequelize size={30} className="text-blue-400" />,
+        name: "Sequelize",
+      },
+    ],
+  },
+  {
+    title: "Learning",
+    technologies: [
+      {
+        icon: <FaAngular size={30} className="text-red-600" />,
+        name: "Angular",
+      },
+      {
+        icon: <SiMongodb size={30} className="text-green-800" />,
+        name: "MongoDB",
+      },
+      {
+        icon: <FaBootstrap size={30} className="text-purple-600" />,
+        name: "Bootstrap",
+      },
+    ],
+  },
+  {
+    title: "Tools",
+    technologies: [
+      { icon: <FaGitAlt size={30} className="text-orange-700" />, name: "Git" },
+      { icon: <FaGithub size={30} className="text-white" />, name: "GitHub" },
+      {
+        icon: <SiVisualstudiocode size={30} className="text-blue-500" />,
+        name: "VSCode",
+      },
+      { icon: <FaNpm size={30} className="text-orange-900" />, name: "NPM" },
+    ],
+  },
+];
 
 export default function About() {
   return (
@@ -35,95 +113,24 @@ export default function About() {
       <div>
         <h2>technologies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
-      <div className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px]">
-        <h4 className="text-2xl font-semibold mb-4">Frontend</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="flex flex-col items-center">
-            <FaHtml5 size={30} className="text-orange-700" />
-            <span>HTML</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <FaCss3Alt size={30} className="text-blue-700" />
-            <span>CSS</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <IoLogoJavascript size={30} className="text-yellow-500" />
-            <span>JavaScript</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <FaReact size={30} className="text-blue-500" />
-            <span>React</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <RiTailwindCssFill size={30} className="text-cyan-400" />
-            <span>TailwindCSS</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <SiNextdotjs size={30} className="text-white" />
-            <span>Next.js</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <SiRedux size={30} className="text-purple-900" />
-            <span>Redux</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px]">
-        <h4 className="text-2xl font-semibold mb-4">Backend</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="flex flex-col items-center">
-            <FaNodeJs size={30} className="text-green-800" />
-            <span>Node</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <SiExpress size={30} className="text-white" />
-            <span>Express</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <BiLogoPostgresql size={30} className="text-blue-400" />
-            <span>PostgreSQL</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <SiSequelize size={30} className="text-blue-400" />
-            <span>Sequelize</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px]">
-        <h4 className="text-2xl font-semibold mb-4">Learning</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="flex flex-col items-center">
-            <SiTypescript size={30} className="text-blue-400" />
-            <span>TypeScript</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px]">
-        <h4 className="text-2xl font-semibold mb-4">Tools</h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="flex flex-col items-center">
-            <FaGitAlt size={30} className="text-orange-700" />
-            <span>Git</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <FaGithub size={30} className="text-white" />
-            <span>GitHub</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <SiVisualstudiocode size={30} className="text-blue-500" />
-            <span>VSCode</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <FaNpm size={30} className="text-orange-900" />
-            <span>NPM</span>
-          </div>
+          {sections.map((section, sectionIndex) => (
+            <div
+              key={sectionIndex}
+              className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px]"
+            >
+              <h4 className="text-2xl font-semibold mb-4">{section.title}</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {section.technologies.map((tech, techIndex) => (
+                  <div key={techIndex} className="flex flex-col items-center">
+                    {tech.icon}
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-        </div>
-      </div>
   );
 }

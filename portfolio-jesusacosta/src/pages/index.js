@@ -24,7 +24,7 @@ export default function app() {
         <Experience />
       </section>
 
-      <section id="Proyects">
+      <section id="Projects">
         <Proyects />
       </section>
 

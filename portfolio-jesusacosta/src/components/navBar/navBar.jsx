@@ -28,6 +28,14 @@ export default function NavBar() {
     }
   }, [lastScrollY]);
 
+  const navLinks = [
+    { href: "#Home", label: "Home" },
+    { href: "#About", label: "About" },
+    { href: "#Experience", label: "Experience" },
+    { href: "#Projects", label: "Projects" },
+    { href: "#Contact", label: "Contact" }
+  ];
+
   return (
     <div className={`fixed w-full transition-transform duration-300 ${scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"}`}>
       <div className="z-40 w-full md:h-[90px] px-10 py-5 font-medium flex justify-between items-center bg-black bg-opacity-40 backdrop-blur-sm">
@@ -35,21 +43,11 @@ export default function NavBar() {
          
         </div>
         <div className="flex items-center space-x-10 text-lg text-white">
-          <Link href="#Home" className="cursor-pointer hover:underline hover:scale-125">
-            Home
-          </Link>
-          <Link href="#About" className="cursor-pointer hover:underline hover:scale-125">
-          About
-          </Link>
-          <Link href="#Experience" className="cursor-pointer hover:underline hover:scale-125">
-            Experience
-          </Link>
-          <Link href="#Proyects" className="cursor-pointer hover:underline hover:scale-125">
-            Projects
-          </Link>
-          <Link href="#Contact" className="cursor-pointer hover:underline hover:scale-125">
-            Contact
-          </Link>
+          {navLinks.map((link, index) => (
+            <Link key={index} href={link.href} className="cursor-pointer hover:underline hover:scale-125">
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
     </div>
