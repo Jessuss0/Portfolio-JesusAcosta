@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -33,18 +32,24 @@ export default function NavBar() {
     { href: "#About", label: "About" },
     { href: "#Experience", label: "Experience" },
     { href: "#Projects", label: "Projects" },
-    { href: "#Contact", label: "Contact" }
+    { href: "#Contact", label: "Contact" },
   ];
 
   return (
-    <div className={`fixed w-full transition-transform duration-300 ${scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"}`}>
-      <div className="z-40 w-full md:h-[90px] px-10 py-5 font-medium flex justify-between items-center bg-black bg-opacity-40 backdrop-blur-sm">
-        <div>
-         
-        </div>
+    <div
+      className={`fixed w-full transition-transform duration-300 ${
+        scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
+      <div className="z-40 w-full md:h-[90px] px-10 py-5 font-medium flex justify-between items-center bg-black bg-opacity-70 backdrop-blur-sm">
+        <div></div>
         <div className="flex items-center space-x-10 text-lg text-white">
           {navLinks.map((link, index) => (
-            <Link key={index} href={link.href} className="cursor-pointer hover:underline hover:scale-125">
+            <Link
+              key={index}
+              href={link.href}
+              className="cursor-pointer hover:underline hover:scale-125"
+            >
               {link.label}
             </Link>
           ))}

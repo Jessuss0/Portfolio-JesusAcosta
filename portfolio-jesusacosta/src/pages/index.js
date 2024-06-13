@@ -11,23 +11,21 @@ const inter = Inter({ subsets: ["latin"] });
 export default function app() {
   return (
     <div>
-      <NavBar />
-      <section id="Home">
-        <Home />
-      </section>
-
+      <div className="relative w-full h-screen bg-cover bg-center flex flex-col bg-custom-bg">
+        <NavBar />
+        <section id="Home">
+          <Home />
+        </section>
+      </div>
       <section id="About">
         <About />
       </section>
-
       <section id="Experience">
         <Experience />
       </section>
-
       <section id="Projects">
         <Proyects />
       </section>
-
       <section id="Contact">
         <Contact />
       </section>
