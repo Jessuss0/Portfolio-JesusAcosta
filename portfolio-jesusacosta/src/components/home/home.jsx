@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-start p-8">
       <div>
-        <h2 className="text-5xl mb-4 font-black text-black">
+        <h2 className=" text-3xl sm:text-6xl mb-4 font-black text-black">
           Hi i'am Jesús Acosta,
         </h2>
-        <h2 className="text-7xl text-purple-600 text mb-8 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4352f1] to-[#9003bb]">
+        <h2 className=" text-5xl sm:text-8xl text-purple-600 text mb-8 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4352f1] to-[#9003bb]">
           Full stack web Developer!
         </h2>
-        <p className="mb-6 font-black text-gray-400 sm:text-gray-600">
+        <p className="mb-6 font-black text-gray-400 sm:text-gray-600 sm:text-2xl">
           Focus on learning and improving my skills
         </p>
       </div>

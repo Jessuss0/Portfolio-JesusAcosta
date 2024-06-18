@@ -22,27 +22,27 @@ const sections = [
   {
     title: "Frontend",
     technologies: [
-      { icon: <FaHtml5 size={30} className="text-orange-700" />, name: "HTML" },
-      { icon: <FaCss3Alt size={30} className="text-blue-700" />, name: "CSS" },
-      { icon: <FaReact size={30} className="text-blue-500" />, name: "React" },
+      { icon: <FaHtml5 size={35} className="text-orange-700" />, name: "HTML" },
+      { icon: <FaCss3Alt size={35} className="text-blue-700" />, name: "CSS" },
+      { icon: <FaReact size={35} className="text-blue-500" />, name: "React" },
       {
-        icon: <IoLogoJavascript size={30} className="text-yellow-500" />,
+        icon: <IoLogoJavascript size={35} className="text-yellow-500" />,
         name: "JavaScript",
       },
       {
-        icon: <SiTypescript size={30} className="text-blue-400" />,
+        icon: <SiTypescript size={35} className="text-blue-400" />,
         name: "TypeScript",
       },
       {
-        icon: <SiNextdotjs size={30} className="text-white" />,
+        icon: <SiNextdotjs size={35} className="text-white" />,
         name: "Next.js",
       },
       {
-        icon: <RiTailwindCssFill size={30} className="text-cyan-400" />,
+        icon: <RiTailwindCssFill size={35} className="text-cyan-400" />,
         name: "TailwindCSS",
       },
       {
-        icon: <SiRedux size={30} className="text-purple-900" />,
+        icon: <SiRedux size={35} className="text-purple-900" />,
         name: "Redux",
       },
     ],
@@ -50,14 +50,14 @@ const sections = [
   {
     title: "Backend",
     technologies: [
-      { icon: <FaNodeJs size={30} className="text-green-800" />, name: "Node" },
-      { icon: <SiExpress size={30} className="text-white" />, name: "Express" },
+      { icon: <FaNodeJs size={35} className="text-green-800" />, name: "Node" },
+      { icon: <SiExpress size={35} className="text-white" />, name: "Express" },
       {
-        icon: <BiLogoPostgresql size={30} className="text-blue-400" />,
+        icon: <BiLogoPostgresql size={35} className="text-blue-400" />,
         name: "PostgreSQL",
       },
       {
-        icon: <SiSequelize size={30} className="text-blue-400" />,
+        icon: <SiSequelize size={35} className="text-blue-400" />,
         name: "Sequelize",
       },
     ],
@@ -66,15 +66,15 @@ const sections = [
     title: "Learning",
     technologies: [
       {
-        icon: <FaAngular size={30} className="text-red-600" />,
+        icon: <FaAngular size={35} className="text-red-600" />,
         name: "Angular",
       },
       {
-        icon: <SiMongodb size={30} className="text-green-800" />,
+        icon: <SiMongodb size={35} className="text-green-800" />,
         name: "MongoDB",
       },
       {
-        icon: <FaBootstrap size={30} className="text-purple-600" />,
+        icon: <FaBootstrap size={35} className="text-purple-600" />,
         name: "Bootstrap",
       },
     ],
@@ -82,13 +82,13 @@ const sections = [
   {
     title: "Tools",
     technologies: [
-      { icon: <FaGitAlt size={30} className="text-orange-700" />, name: "Git" },
-      { icon: <FaGithub size={30} className="text-white" />, name: "GitHub" },
+      { icon: <FaGitAlt size={35} className="text-orange-700" />, name: "Git" },
+      { icon: <FaGithub size={35} className="text-white" />, name: "GitHub" },
       {
-        icon: <SiVisualstudiocode size={30} className="text-blue-500" />,
+        icon: <SiVisualstudiocode size={35} className="text-blue-500" />,
         name: "VSCode",
       },
-      { icon: <FaNpm size={30} className="text-orange-900" />, name: "NPM" },
+      { icon: <FaNpm size={35} className="text-orange-900" />, name: "NPM" },
     ],
   },
 ];
@@ -97,8 +97,10 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <div>
-        <h2>About me</h2>
-        <p>
+        <h2 className="text-[33px] text-center font-black mt-20">
+        <span className=" text-blue-900">#</span>About Me --------------------
+        </h2>
+        <p className=" sm:text-xl text-lg font-semibold sm:p-24 p-10">
           I am 23 years old, living in San Nicolas de los Arroyos, Buenos Aires
           province. I've been passionate about technology and video games since
           I was very young, which led me to enter the world of programming.
@@ -106,12 +108,15 @@ export default function About() {
           skills in any work environment. I was chosen as the best classmate in
           both primary and secondary school and recognized by the Rotary Club.
           Therefore, if you need a professional who can easily integrate into
-          your team, provide solutions, and listen, don't hesitate to contact
-          me!
+          your team, provide solutions, and listen, don't hesitate to{" "}
+          <span className=" text-blue-600 underline">contact me!</span>
         </p>
       </div>
       <div>
-        <h2>technologies</h2>
+        <h2 className="text-xl text-center mb-2 font-black">
+          {" "}
+          my tech stack:
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
           {sections.map((section, sectionIndex) => (
             <div
@@ -119,7 +124,7 @@ export default function About() {
               className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px]"
             >
               <h4 className="text-2xl font-semibold mb-4">{section.title}</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {section.technologies.map((tech, techIndex) => (
                   <div key={techIndex} className="flex flex-col items-center">
                     {tech.icon}
