@@ -17,6 +17,7 @@ import { SiSequelize } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 
 const sections = [
   {
@@ -77,6 +78,10 @@ const sections = [
         icon: <FaBootstrap size={35} className="text-purple-600" />,
         name: "Bootstrap",
       },
+      {
+        icon: <FaPython size={35} className="text-blue-400" />,
+        name: "Python",
+      },
     ],
   },
   {
@@ -98,12 +103,13 @@ export default function About() {
     <div className="min-h-screen">
       <div>
         <h2 className="text-[33px] text-center font-black mt-20">
-        <span className=" text-blue-900">#</span>About Me --------------------
+          <span className=" text-blue-900">#</span>About Me
         </h2>
-        <p className=" sm:text-xl text-lg font-semibold sm:p-24 p-10">
+        <p className=" sm:text-xl text-base font-semibold sm:p-24 p-10 text-gray-300">
           I am 23 years old, living in San Nicolas de los Arroyos, Buenos Aires
           province. I've been passionate about technology and video games since
           I was very young, which led me to enter the world of programming.
+          <br />
           Besides my technical skills, I am aware of the importance of soft
           skills in any work environment. I was chosen as the best classmate in
           both primary and secondary school and recognized by the Rotary Club.
@@ -113,10 +119,7 @@ export default function About() {
         </p>
       </div>
       <div>
-        <h2 className="text-xl text-center mb-2 font-black">
-          {" "}
-          my tech stack:
-        </h2>
+        <h2 className="text-xl text-center mb-2 font-black">my tech stack:</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
           {sections.map((section, sectionIndex) => (
             <div
