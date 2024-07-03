@@ -18,6 +18,7 @@ import { FaAngular } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
+import Link from "next/link";
 
 const sections = [
   {
@@ -104,6 +105,9 @@ export default function About() {
       <div>
         <h2 className="text-[33px] text-center font-black mt-20">
           <span className=" text-blue-900">#</span>About Me
+          <span className="h-[1px] md:ml-6 w-full md:w-[450px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
+            &nbsp;
+          </span>
         </h2>
         <p className=" sm:text-xl text-base font-semibold sm:p-24 p-10 text-gray-300">
           I am 23 years old, living in San Nicolas de los Arroyos, Buenos Aires
@@ -115,7 +119,9 @@ export default function About() {
           both primary and secondary school and recognized by the Rotary Club.
           Therefore, if you need a professional who can easily integrate into
           your team, provide solutions, and listen, don't hesitate to{" "}
-          <span className=" text-blue-600 underline">contact me!</span>
+          <Link href={"#Contact"}>
+            <span className=" text-blue-600 underline">contact me!</span>
+          </Link>
         </p>
       </div>
       <div>
