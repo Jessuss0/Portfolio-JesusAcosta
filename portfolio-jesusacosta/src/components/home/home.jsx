@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col justify-center items-start p-8">
       <div>
         <h2 className=" text-3xl sm:text-6xl mb-4 font-black text-black">
-          Hi iam Jesús Acosta,
+        Hi i'am Jesús Acosta,
         </h2>
         <h2 className=" text-5xl sm:text-8xl text-purple-600 text mb-8 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4352f1] to-[#9003bb]">
           Full stack web Developer!
