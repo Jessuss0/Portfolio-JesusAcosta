@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import Link from "next/link";
 import Image from "next/image";
 import curriculumImage from "@/icons/curriculum.png";
@@ -82,3 +84,4 @@ export default function Home() {
     </div>
   );
 }
+/* eslint-enable react/no-unescaped-entities */

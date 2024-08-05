@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -145,3 +146,4 @@ export default function About() {
     </div>
   );
 }
+/* eslint-enable react/no-unescaped-entities */
