@@ -101,21 +101,21 @@ const sections = [
 
 export default function About() {
   return (
-    <div className="">
+    <div >
       <div>
         <h2 className="text-[33px] text-center font-black mt-20">
           <span className=" text-blue-900">#</span>About Me
         </h2>
         <p className="sm:text-xl text-base font-semibold sm:p-24 p-10 text-gray-300">
           I am 23 years old, living in San Nicolas de los Arroyos, Buenos Aires
-          province. I've been passionate about technology and video games since
+          province. Ive been passionate about technology and video games since
           I was very young, which led me to enter the world of programming.
           <br />
           Besides my technical skills, I am aware of the importance of soft
           skills in any work environment. I was chosen as the best classmate in
           both primary and secondary school and recognized by the Rotary Club.
           Therefore, if you need a professional who can easily integrate into
-          your team, provide solutions, and listen, don't hesitate to{" "}
+          your team, provide solutions, and listen, dont hesitate to{" "}
           <Link href={"#Contact"}>
             <span className=" text-blue-600 underline">contact me!</span>
           </Link>
