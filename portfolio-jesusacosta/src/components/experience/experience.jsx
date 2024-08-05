@@ -9,10 +9,7 @@ export default function Experience() {
       </h2>
       <p>
         I have experience in group projects using agile methodologies and
-        working freelance for clients. I am a developer focused on innovating to
-        create creative and highly efficient projects. I am interested in
-        advancing my career in companies that provide dynamic environments for
-        growth and learning, allowing me to grow professionally.
+        working freelance for clients. 
       </p>
       <div>
         <span>

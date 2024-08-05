@@ -121,7 +121,7 @@ export default function About() {
           Therefore, if you need a professional who can easily integrate into
           your team, provide solutions, and listen, don't hesitate to{" "}
           <Link href={"#Contact"}>
-            <span className=" text-blue-600 underline">contact me!</span>
+            <span className="sm:text-2xl text-xl text-blue-600 underline">contact me!</span>
           </Link>
         </p>
       </div>
