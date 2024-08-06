@@ -102,7 +102,7 @@ const sections = [
 
 export default function About() {
   return (
-    <div >
+    <div className="min-h-screen">
       <div>
         <h2 className="text-[33px] text-center font-black mt-20">
           <span className=" text-blue-900">#</span>About Me
@@ -115,13 +115,16 @@ export default function About() {
           province. I've been passionate about technology and video games since
           I was very young, which led me to enter the world of programming.
           <br />
+          <br />
           Besides my technical skills, I am aware of the importance of soft
           skills in any work environment. I was chosen as the best classmate in
           both primary and secondary school and recognized by the Rotary Club.
           Therefore, if you need a professional who can easily integrate into
           your team, provide solutions, and listen, don't hesitate to{" "}
           <Link href={"#Contact"}>
-            <span className="sm:text-2xl text-xl text-blue-600 underline">contact me!</span>
+            <span className="sm:text-2xl text-xl text-blue-600 underline">
+              contact me!
+            </span>
           </Link>
         </p>
       </div>
