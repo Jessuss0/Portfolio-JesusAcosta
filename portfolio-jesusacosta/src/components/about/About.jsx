@@ -20,7 +20,7 @@ import { SiMongodb } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import Link from "next/link";
-import sticker from "@/icons/imagenAbout.gif"
+import sticker from "@/icons/imagenAbout.gif";
 import Image from "next/image";
 
 const sections = [
@@ -114,28 +114,29 @@ export default function About() {
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
           <p className="md:text-2xl text-base font-bold md:p-24 p-10 text-gray-300 md:w-[50%]">
-            I am 23 years old, living in San Nicolas de los Arroyos, Buenos Aires
-            province. I've been passionate about technology and video games since
-            I was very young, which led me to enter the world of programming.
+            I am 23 years old, living in San Nicolas de los Arroyos, Buenos
+            Aires province. I've been passionate about technology and video
+            games since I was very young, which led me to enter the world of
+            programming.
             <br />
             <br />
             Besides my technical skills, I am aware of the importance of soft
-            skills in any work environment. I was chosen as the best classmate in
-            both primary and secondary school and recognized by the Rotary Club.
-            Therefore, if you need a professional who can easily integrate into
-            your team, provide solutions, and listen, don't hesitate to{" "}
+            skills in any work environment. I was chosen as the best classmate
+            in both primary and secondary school and recognized by the Rotary
+            Club. Therefore, if you need a professional who can easily integrate
+            into your team, provide solutions, and listen, don't hesitate to{" "}
             <Link href={"#Contact"}>
               <span className="md:text-2xl text-xl text-blue-600 underline">
                 contact me!
               </span>
             </Link>
           </p>
-          <div className="md:w-1/3"> {/* Ajusta el ancho aquí */}
+          <div className="md:w-1/3">
             <Image
               src={sticker}
               alt="Picture of Jesús"
-              width={300} // Puedes ajustar el tamaño según necesites
-              height={300} // Ajusta la altura proporcionalmente
+              width={300}
+              height={300}
               layout="responsive"
               objectFit="cover"
               className="rounded-md"
