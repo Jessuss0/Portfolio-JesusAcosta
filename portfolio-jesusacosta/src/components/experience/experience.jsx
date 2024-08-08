@@ -31,21 +31,15 @@ export default function Experience() {
               <li className="my-3">Responsive designs.</li>
               <li className="my-3">Next.js, TypeScript and Tailwind CSS.</li>
               <li className="my-3">
-                Login, Register, forgot-password, reset-forgotten-password,
-                change-password, among others.
+                Various user authentication and management features, including
+                password handling and account recovery.
               </li>
             </ul>
             <div className="w-full flex justify-center md:block">
-              <Link
-                href={
-                  "https://www.linkedin.com/feed/update/urn:li:activity:7207422504972218368/"
-                }
-              >
                 <button class="bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
                   <span class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                  See More
+                  FULLTIME
                 </button>
-              </Link>
             </div>
           </div>
         </div>

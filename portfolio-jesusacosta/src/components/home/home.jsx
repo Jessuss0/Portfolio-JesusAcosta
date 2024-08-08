@@ -9,12 +9,12 @@ export default function Home() {
     <div className="min-h-screen flex flex-col justify-center items-start p-8">
       <div>
         <h2 className=" text-3xl md:text-6xl mb-4 font-black text-black">
-          Hi, i'am Jesús Acosta
+          Hi, i'm Jesús Acosta
         </h2>
         <h2 className=" text-5xl md:text-8xl text-purple-600 text mb-8 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4352f1] to-[#9003bb]">
           Full stack web Developer!
         </h2>
-        <p className="mb-6 font-black text-gray-400 md:text-gray-600 md:text-2xl">
+        <p className="mb-6 font-black text-gray-600 md:text-2xl">
           Focus on learning and improving my skills
         </p>
       </div>

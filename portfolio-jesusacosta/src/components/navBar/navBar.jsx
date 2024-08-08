@@ -6,6 +6,7 @@ export default function NavBar() {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const home = "<JesusAcosta/>"
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
@@ -90,7 +91,8 @@ export default function NavBar() {
         }`}
       >
         <div className="z-40 w-full h-[90px] px-10 py-5 font-medium flex justify-between items-center bg-black bg-opacity-70 backdrop-blur-sm">
-          <div></div>
+          <div>
+          </div>
           <div className="flex items-center space-x-10 text-lg text-white">
             {navLinks.map((link, index) => (
               <Link
