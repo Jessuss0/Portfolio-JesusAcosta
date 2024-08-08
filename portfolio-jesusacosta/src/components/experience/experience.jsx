@@ -18,7 +18,7 @@ export default function Experience() {
             Completed.
           </p>
         </div>
-        <div className=" mt-20 xl:mt-0 xl:flex xl:justify-center xl:items-center flex flex-col-reverse md:flex-row bg-gradient-to-t from-slate-800 to-black p-8 md:w-[800px] lg:w-[1000px] rounded-xl">
+        <div className=" mt-20 xl:mt-0 xl:flex xl:justify-center xl:items-center flex flex-col-reverse md:flex-row bg-gradient-to-t from-orange-800 to-blue-800 p-8 md:w-[800px] lg:w-[1000px] rounded-xl">
           <div className="md:ml-5 md:mr-auto">
             <h2 className="text-2xl font-medium">
               Front-end Developer - Freelance
