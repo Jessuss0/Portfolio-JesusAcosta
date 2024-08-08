@@ -110,7 +110,7 @@ export default function About() {
             &nbsp;
           </span>
         </h2>
-        <p className="sm:text-xl text-base font-semibold sm:p-24 p-10 text-gray-300">
+        <p className=" md:text-2xl text-base font-bold md:p-24 p-10 text-gray-300">
           I am 23 years old, living in San Nicolas de los Arroyos, Buenos Aires
           province. I've been passionate about technology and video games since
           I was very young, which led me to enter the world of programming.
@@ -122,14 +122,13 @@ export default function About() {
           Therefore, if you need a professional who can easily integrate into
           your team, provide solutions, and listen, don't hesitate to{" "}
           <Link href={"#Contact"}>
-            <span className="sm:text-2xl text-xl text-blue-600 underline">
+            <span className="md:text-2xl text-xl text-blue-600 underline">
               contact me!
             </span>
           </Link>
         </p>
       </div>
       <div>
-        {/* <h2 className="text-xl text-center mb-2 font-black">my tech stack:</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
           {sections.map((section, sectionIndex) => (
             <div
