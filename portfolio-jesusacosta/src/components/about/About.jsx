@@ -4,7 +4,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiNextdotjs } from "react-icons/si";
+import { SiCanvas, SiNextdotjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -19,6 +19,7 @@ import { FaAngular } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
+import { SiCanva } from "react-icons/si";
 import Link from "next/link";
 import sticker from "@/icons/imagenAbout.gif";
 import Image from "next/image";
@@ -98,6 +99,10 @@ const sections = [
         name: "VSCode",
       },
       { icon: <FaNpm size={35} className="text-orange-900" />, name: "NPM" },
+      {
+        icon: <SiCanva size={35} className=" text-cyan-500" />,
+        name: "Canva",
+      },
     ],
   },
 ];
@@ -134,7 +139,7 @@ export default function About() {
           <div className="md:w-1/3">
             <Image
               src={sticker}
-              alt="Picture of Jesús"
+              alt="Thats me :D"
               width={300}
               height={300}
               layout="responsive"

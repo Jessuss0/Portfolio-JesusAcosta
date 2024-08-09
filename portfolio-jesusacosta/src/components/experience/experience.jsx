@@ -11,7 +11,7 @@ export default function Experience() {
       </h2>
       <div className="flex flex-col  justify-center items-center xl:flex-row xl:justify-between sm:h-[600px] md:mt-20 mt-0">
         <div className="flex flex-col xl:w-[570px] 2xl:w-[950px] md:px-6 xl:px-0 ">
-          <p class="text-white text-center xl:text-left font-bold text-xl leading-10 sm:text-2xl sm:leading-[46px] md:leading-[56px] md:text-3xl xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
+          <p class="text-white text-center xl:text-left font-bold text-xl leading-10 md:text-2xl sm:leading-[46px] md:leading-[56px] xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
             More that 1 year experience as a <br />
             <span className=" text-blue-900">Full Stack Web Developer </span>
             and 5<span className=" text-orange-700"> Projects </span>

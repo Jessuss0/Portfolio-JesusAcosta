@@ -6,7 +6,7 @@ import curriculumImage from "@/icons/curriculum.png";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-start p-8">
+    <div className="min-h-screen flex flex-col justify-center items-start p-8 md:ml-14">
       <div>
         <h2 className=" text-3xl md:text-6xl mb-4 font-black text-black">
           Hi, i'm Jesús Acosta
