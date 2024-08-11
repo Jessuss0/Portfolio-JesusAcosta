@@ -5,12 +5,12 @@ export default function Experience() {
     <div className="min-h-screen px-4 lg:max-w-[1700px] h-full md:max-w-7xl m-auto z-10 lg:w-full">
       <h2 className="text-[33px] text-center font-black mt-20">
         <span className=" text-blue-900">#</span>Experience
-        <span className="h-[1px] md:ml-6 w-full md:w-[450px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
+        <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
           &nbsp;
         </span>
       </h2>
       <div className="flex flex-col  justify-center items-center xl:flex-row xl:justify-between sm:h-[600px] md:mt-20 mt-0">
-        <div className="flex flex-col xl:w-[570px] 2xl:w-[950px] md:px-6 xl:px-0 ">
+        <div className="flex flex-col xl:w-[570px] 2xl:w-[950px] md:px-6 xl:px-0">
           <p class="text-white text-center xl:text-left font-bold text-xl leading-10 md:text-2xl sm:leading-[46px] md:leading-[56px] xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
             More that 1 year experience as a <br />
             <span className=" text-blue-900">Full Stack Web Developer </span>
