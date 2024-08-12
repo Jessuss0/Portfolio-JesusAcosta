@@ -66,7 +66,8 @@ export default function Home() {
         </Link>
         <button
           href="/"
-          class="group max-h-10 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#3f3c75] hover:to-[#1a2297]"
+          onClick={()=> console.log("cv descargado :D")}
+          class="group max-h-10 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500"
         >
           <Image
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert "
