@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import Home from "@/components/home/home";
 import NavBar from "@/components/navBar/navBar";
 import About from "@/components/about/About";
-import Proyects from "@/components/proyects/proyects";
+import Projects from "@/components/projects/projects";
 import Experience from "@/components/experience/experience";
 import Contact from "@/components/contact/contact";
 
@@ -24,7 +24,7 @@ export default function app() {
         <Experience />
       </section>
       <section id="Projects">
-        <Proyects />
+        <Projects />
       </section>
       <section id="Contact">
         <Contact />
