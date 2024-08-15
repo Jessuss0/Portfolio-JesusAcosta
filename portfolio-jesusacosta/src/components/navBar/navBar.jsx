@@ -40,7 +40,7 @@ export default function NavBar() {
     <div>
       {/* Mobile Menu */}
       <div className="md:hidden fixed w-full z-50">
-        <div className="bg-black backdrop-blur-sm px-5 py-3 flex justify-between items-center">
+        <div className="bg-black bg-opacity-70 backdrop-blur-sm px-5 py-3 flex justify-between items-center">
           <div></div>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
