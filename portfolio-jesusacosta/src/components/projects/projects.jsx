@@ -8,7 +8,7 @@ import imagenpi from "@/icons/pi.png";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 
-export default function Proyects() {
+export default function Projects() {
   const projectsData = [
     {
       image: imageShoes,
@@ -95,9 +95,9 @@ export default function Proyects() {
     },
   ];
   return (
-    <div className="min-h-screen">
+    <div className="min-h-full">
       <h2 className="text-[33px] text-center font-black mt-20">
-        <span className="text-blue-900">#</span>Proyects
+        <span className="text-blue-900">#</span>Projects
         <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
           &nbsp;
         </span>
@@ -119,12 +119,12 @@ export default function Proyects() {
             const isInverted = index % 2 !== 0;
             return (
               <div
-                className={`flex flex-col md:flex-row ${
+                className={`flex md:mb-0 mb-5 flex-col md:flex-row ${
                   isInverted ? "md:flex-row-reverse" : "md:flex-row"
                 }`}
                 key={projectName}
               >
-                <div className="relative w-full md:w-[600px] md:h-[300px] md:mx-10">
+                <div className="relative w-full md:w-[600px] md:min-h-[300px] md:mx-10">
                   <Image
                     className="rounded-xl object-cover w-full h-full"
                     src={image}
@@ -138,7 +138,7 @@ export default function Proyects() {
 
                 <div className="z-10 flex flex-col md:w-1/2 justify-between">
                   <div>
-                    <h3 className="text-4xl font-semibold md:mt-0 mt-5">
+                    <h3 className="text-4xl font-semibold md:mt-0 mt-5 ml-5">
                       {projectName}
                     </h3>
                     <div className="bg-black p-6 mt-4 md:mt-0">
@@ -156,7 +156,7 @@ export default function Proyects() {
                     ))}
                   </div>
                   {projectExternalLinks ? (
-                    <div className="flex md:mt-8">
+                    <div className="flex md:mt-8 mt-3 ml-6">
                       <Link
                         target="_blank"
                         href={projectExternalLinks.github}
@@ -172,7 +172,7 @@ export default function Proyects() {
                       </Link>
                     </div>
                   ) : (
-                    <div className="flex md:mt-8">
+                    <div className="flex md:mt-8 mt-3 ml-6">
                       <SiTypescript size={25} className="mr-4" />
                       <RiTailwindCssFill size={25} />
                     </div>

@@ -39,12 +39,12 @@ export default function NavBar() {
   return (
     <div>
       {/* Mobile Menu */}
-      <div className="md:hidden fixed w-full">
-        <div className="bg-black bg-opacity-70 backdrop-blur-sm px-5 py-3 flex justify-between items-center">
+      <div className="md:hidden fixed w-full z-50">
+        <div className="bg-transparent backdrop-blur-sm px-5 py-3 flex justify-between items-center">
           <div></div>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-white focus:outline-none"
+            className="text-gray-400 focus:outline-none"
           >
             <svg
               className="w-6 h-6 cursor-pointer"
@@ -86,11 +86,11 @@ export default function NavBar() {
 
       {/* Desktop Menu */}
       <div
-        className={`hidden md:block fixed w-full transition-transform duration-300 ${
+        className={`hidden md:block fixed w-full transition-transform duration-300 z-50 ${
           scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"
         }`}
       >
-        <div className="z-40 w-full h-[90px] px-10 py-5 font-medium flex justify-between items-center bg-black bg-opacity-70 backdrop-blur-sm">
+        <div className="z-50 w-full h-[90px] px-10 py-5 font-medium flex justify-between items-center bg-black bg-opacity-70 backdrop-blur-sm">
           <div></div>
           <div className="flex items-center space-x-10 text-lg text-white">
             {navLinks.map((link, index) => (
