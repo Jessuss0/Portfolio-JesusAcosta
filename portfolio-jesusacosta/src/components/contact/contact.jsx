@@ -35,6 +35,19 @@ export default function Contact() {
     }, 1000);
   };
 
+  function mail() {
+    window.location.href = `mailto:${"jesusacosta3321@gmail.com"}`;
+  }
+
+  const downloadFile = () => {
+    const link = document.createElement("a");
+    link.href = "/cvSpanish.pdf"; // Ruta al archivo PDF en la carpeta public
+    link.download = "CV Jesús Acosta.pdf"; // Nombre con el que se descargará
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="mb-20 md:mt-10">
       <h2 className="text-[33px] text-center font-black mt-20">
@@ -85,23 +98,22 @@ export default function Contact() {
             </button>
           </Link>
           <button
-            href="/"
-            onClick={() => console.log("cv descargado :D")}
-            class="group w-12 h-12 md:w-16 md:h-16 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500"
+            onClick={downloadFile}
+            className="group w-12 h-12 md:w-16 md:h-16 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500"
           >
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert "
+              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
               src={curriculumImage}
               alt="Next.js Logo"
               priority
             />
-            <span class="absolute opacity-0 group-hover:opacity-100 group-hover:text-sm group-hover:-translate-y-10 duration-700 text-white">
+            <span className="absolute opacity-0 group-hover:opacity-100 group-hover:text-sm group-hover:-translate-y-10 duration-700 text-white">
               CV
             </span>
           </button>
           <button
             href="/"
-            onClick={() => console.log("mailto:jesus")}
+            onClick={() => mail()}
             class="group w-12 h-12 md:w-16 md:h-16 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-gray-900 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
           >
             <Image

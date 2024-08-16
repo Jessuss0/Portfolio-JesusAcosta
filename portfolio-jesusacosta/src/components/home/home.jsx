@@ -5,6 +5,15 @@ import Image from "next/image";
 import curriculumImage from "@/icons/curriculum.png";
 
 export default function Home() {
+  const downloadFile = () => {
+    const link = document.createElement("a");
+    link.href = "/cvSpanish.pdf"; // Ruta al archivo PDF en la carpeta public
+    link.download = "CV Jesús Acosta.pdf"; // Nombre con el que se descargará
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-start p-8 md:ml-14">
       <div>
@@ -60,7 +69,7 @@ export default function Home() {
         </Link>
         <button
           href="/"
-          onClick={() => console.log("cv descargado :D")}
+          onClick={downloadFile}
           class="group max-h-10 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500"
         >
           <Image
