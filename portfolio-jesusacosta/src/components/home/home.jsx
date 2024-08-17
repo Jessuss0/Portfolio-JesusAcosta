@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import curriculumImage from "@/icons/curriculum.png";
-
+import { TypeAnimation } from "react-type-animation";
 export default function Home() {
   const downloadFile = () => {
     const link = document.createElement("a");
@@ -20,9 +20,22 @@ export default function Home() {
         <h2 className=" text-3xl md:text-6xl mb-4 font-black text-black">
           Hi, i'm Jesús Acosta
         </h2>
-        <h2 className=" text-5xl md:text-8xl text-purple-600 text mb-8 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4352f1] to-[#9003bb]">
-          Full stack web Developer!
-        </h2>
+        <div className="min-h-24 text-5xl md:text-8xl text-purple-600 text mb-8 font-black text-transparent bg-clip-text bg-gradient-to-r from-[#4352f1] to-[#9003bb]">
+          <TypeAnimation
+            sequence={[
+              "Full stack web Developer!",
+              1000,
+              "Back-end Developer",
+              1000,
+              "Front-end Developer",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            cursor={false}
+            repeat={Infinity}
+          />
+        </div>
         <p className="mb-6 font-black text-gray-600 md:text-2xl">
           Focus on learning and improving my skills
         </p>
