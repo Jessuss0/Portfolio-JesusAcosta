@@ -7,7 +7,7 @@ export default function Experience() {
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
-          duration: 1,
+          duration: 0.8,
         }}
         viewport={{ once: false, amount: 0.1 }}
       >
@@ -24,7 +24,7 @@ export default function Experience() {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
-            duration: 1,
+            duration:0.8,
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
@@ -42,7 +42,7 @@ export default function Experience() {
             initial={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              duration: 1,
+              duration: 0.8,
               ease: "easeInOut",
             }}
             viewport={{ once: false, amount: 0.2 }}
