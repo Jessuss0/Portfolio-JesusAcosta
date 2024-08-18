@@ -7,6 +7,7 @@ import imagepf1 from "@/icons/pf1.png";
 import imagenpi from "@/icons/pi.png";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const projectsData = [
@@ -96,6 +97,15 @@ export default function Projects() {
   ];
   return (
     <div className="min-h-full">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+        viewport={{ once: false, amount: 0.1 }}
+      >
+
       <h2 className="text-[33px] text-center font-black mt-20">
         <span className="text-blue-900">#</span>Projects
         <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
@@ -103,6 +113,7 @@ export default function Projects() {
         </span>
       </h2>
 
+      </motion.div>
       <div className="m-6 md:m-11 md:h-full md:mx-20 flex flex-col gap-16 md:gap-32">
         {projectsData.map(
           (

@@ -1,24 +1,51 @@
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   return (
     <div className="min-h-screen px-4 lg:max-w-[1700px] h-full md:max-w-7xl m-auto z-10 lg:w-full">
-      <h2 className="text-[33px] text-center font-black mt-20">
-        <span className=" text-blue-900">#</span>Experience
-        <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
-          &nbsp;
-        </span>
-      </h2>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+        viewport={{ once: false, amount: 0.1 }}
+      >
+        <h2 className="text-[33px] text-center font-black mt-20">
+          <span className=" text-blue-900">#</span>Experience
+          <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
+            &nbsp;
+          </span>
+        </h2>
+      </motion.div>
       <div className="flex flex-col  justify-center items-center xl:flex-row xl:justify-between sm:h-[600px] md:mt-20 mt-0">
-        <div className="flex flex-col xl:w-[570px] 2xl:w-[950px] md:px-6 xl:px-0">
+        <motion.div
+          className="flex flex-col xl:w-[570px] 2xl:w-[950px] md:px-6 xl:px-0"
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            ease: "easeInOut",
+          }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <p class="text-white text-center xl:text-left font-bold text-xl leading-10 md:text-2xl sm:leading-[46px] md:leading-[56px] xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
             More that 1 year experience as a <br />
             <span className=" text-blue-900">Full Stack Web Developer </span>
             and 5<span className=" text-orange-700"> Projects </span>
             Completed.
           </p>
-        </div>
-        <div className=" mt-20 xl:mt-0 xl:flex xl:justify-center xl:items-center flex flex-col-reverse md:flex-row bg-gradient-to-t from-orange-800 to-blue-800 p-8 md:w-[800px] lg:w-[1000px] rounded-xl">
+        </motion.div>
+        <motion.div
+          className=" mt-20 xl:mt-0 xl:flex xl:justify-center xl:items-center flex flex-col-reverse md:flex-row bg-gradient-to-t from-orange-800 to-blue-800 p-8 md:w-[800px] lg:w-[1000px] rounded-xl"
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 1,
+            ease: "easeInOut",
+          }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <div className="md:ml-5 md:mr-auto">
             <h2 className="text-2xl font-medium">
               Front-end Developer - Freelance
@@ -42,7 +69,7 @@ export default function Experience() {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ export default function app() {
             transition={{
               duration: 1,
             }}
-            viewport={{ once: false, amount: 0.3 }} // Puedes ajustar esto para controlar cuándo la animación debe activarse
+            viewport={{ once: false, amount: 0.3 }}
           >
             <Home />
           </motion.div>

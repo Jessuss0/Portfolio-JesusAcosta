@@ -1,12 +1,17 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function NavBar() {
   const [scrollDirection, setScrollDirection] = useState("up");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const home = "<JesusAcosta/>";
+
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
@@ -71,17 +76,24 @@ export default function NavBar() {
             </svg>
           </button>
         </div>
-        {isMenuOpen && (
-          <div className="bg-black bg-opacity-70 backdrop-blur-sm py-2 flex flex-col items-end">
-            {navLinks.map((link, index) => (
-              <Link key={index} href={link.href}>
-                <div className="block px-4 py-2 text-white hover:underline">
-                  {link.label}
-                </div>
-              </Link>
-            ))}
-          </div>
-        )}
+
+        {/* Animated Navbar */}
+        <motion.div
+          animate={isMenuOpen ? "open" : "closed"}
+          variants={variants}
+          transition={{
+            ease: "easeInOut",
+          }}
+          className="bg-black bg-opacity-70 backdrop-blur-sm py-2 flex flex-col items-end fixed right-0 w-full md:hidden"
+        >
+          {navLinks.map((link, index) => (
+            <Link key={index} href={link.href}>
+              <div className="block px-4 py-2 text-white hover:underline hover:scale-125">
+                {link.label}
+              </div>
+            </Link>
+          ))}
+        </motion.div>
       </div>
 
       {/* Desktop Menu */}

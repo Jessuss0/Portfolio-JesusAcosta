@@ -23,6 +23,7 @@ import { SiCanva } from "react-icons/si";
 import Link from "next/link";
 import sticker from "@/icons/imagenAbout.gif";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const sections = [
   {
@@ -111,12 +112,22 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <div>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+        viewport={{ once: false, amount: 0.1 }}
+      >
+
         <h2 className="text-[33px] text-center font-black mt-20">
           <span className="text-blue-900">#</span>About Me
           <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
             &nbsp;
           </span>
         </h2>
+      </motion.div>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
           <p className="md:text-2xl text-base font-bold md:p-24 p-10 text-gray-300 md:w-[50%]">
             I am 23 years old, living in San Nicolas de los Arroyos, Buenos
