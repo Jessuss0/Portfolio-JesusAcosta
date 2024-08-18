@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import curriculumImage from "@/icons/curriculum.png";
 import { TypeAnimation } from "react-type-animation";
+
 export default function Home() {
   const downloadFile = () => {
     const link = document.createElement("a");
