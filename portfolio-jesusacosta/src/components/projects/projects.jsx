@@ -105,14 +105,12 @@ export default function Projects() {
         }}
         viewport={{ once: false, amount: 0.1 }}
       >
-
-      <h2 className="text-[33px] text-center font-black mt-20">
-        <span className="text-blue-900">#</span>Projects
-        <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
-          &nbsp;
-        </span>
-      </h2>
-
+        <h2 className="text-[33px] text-center font-black mt-20">
+          <span className="text-blue-900">#</span>Projects
+          <span className="h-[1px] md:ml-6 w-full md:w-[750px] inline-block bg-light relative top-7 group-hover:w-full transition-[width] ease duration-300 bg-white">
+            &nbsp;
+          </span>
+        </h2>
       </motion.div>
       <div className="m-6 md:m-11 md:h-full md:mx-20 flex flex-col gap-16 md:gap-32">
         {projectsData.map(
