@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function app() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="relative w-full h-screen bg-cover bg-center flex flex-col bg-custom-bg">
         <motion.div
           initial={{ y: -100, opacity: 0, scale: 1 }}

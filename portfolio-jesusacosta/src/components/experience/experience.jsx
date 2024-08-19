@@ -36,7 +36,6 @@ export default function Experience() {
             Completed.
           </p>
         </motion.div>
-        <div className="overflow-hidden">
           <motion.div
             className=" mt-20 xl:mt-0 xl:flex xl:justify-center xl:items-center flex flex-col-reverse md:flex-row bg-gradient-to-t from-orange-800 to-blue-800 p-8 md:w-[800px] lg:w-[1000px] rounded-xl"
             initial={{ x: 200, opacity: 0 }}
@@ -73,7 +72,6 @@ export default function Experience() {
           </motion.div>
         </div>
       </div>
-    </div>
   );
 }
 
