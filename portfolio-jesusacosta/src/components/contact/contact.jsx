@@ -57,7 +57,7 @@ export default function Contact() {
       duration: 0.8,
     }}
     viewport={{ once: false, amount: 0.1 }}
-      className="mb-20 md:mt-10 min-h-full"
+      className="mb-20 md:mt-10 min-h-full overflow-hidden"
     >
       <h2 className="text-[33px] text-center font-black mt-20">
         <span className=" text-blue-900">#</span>Contact Me
