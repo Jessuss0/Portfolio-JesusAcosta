@@ -127,11 +127,18 @@ export default function Projects() {
           ) => {
             const isInverted = index % 2 !== 0;
             return (
-              <div
+              <motion.div
                 className={`flex md:mb-0 mb-5 flex-col md:flex-row ${
                   isInverted ? "md:flex-row-reverse" : "md:flex-row"
                 }`}
                 key={projectName}
+                initial={{ x: isInverted ? 200 : -200, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: false, amount: 0.3 }}
               >
                 <div className="relative w-full md:w-[600px] md:min-h-[300px] md:mx-10">
                   <Image
@@ -187,7 +194,7 @@ export default function Projects() {
                     </div>
                   )}
                 </div>
-              </div>
+              </motion.div>
             );
           }
         )}
