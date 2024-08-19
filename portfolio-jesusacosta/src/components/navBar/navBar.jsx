@@ -9,8 +9,8 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const variants = {
-    open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "-100%" },
+    open: { opacity: 1, x: 0 },
   };
 
   const controlNavbar = () => {
@@ -40,6 +40,10 @@ export default function NavBar() {
     { href: "#Projects", label: "Projects" },
     { href: "#Contact", label: "Contact" },
   ];
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, []);
 
   return (
     <div>
@@ -84,6 +88,7 @@ export default function NavBar() {
           transition={{
             ease: "easeInOut",
           }}
+          style={{ display: isMenuOpen ? "flex" : "none" }}
           className="bg-black bg-opacity-70 backdrop-blur-sm py-2 flex flex-col items-end fixed right-0 w-full md:hidden"
         >
           {navLinks.map((link, index) => (

@@ -51,12 +51,12 @@ export default function Contact() {
 
   return (
     <motion.div
-    initial={{ y: 100, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{
-      duration: 0.8,
-    }}
-    viewport={{ once: false, amount: 0.1 }}
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 0.8,
+      }}
+      viewport={{ once: false, amount: 0.1 }}
       className="mb-20 md:mt-10 min-h-full overflow-hidden"
     >
       <h2 className="text-[33px] text-center font-black mt-20">
@@ -66,16 +66,7 @@ export default function Contact() {
         </span>
       </h2>
       <div className="flex flex-col md:flex-row items-center justify-center md: mt-10">
-        <motion.div
-          initial={{ x: -200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          viewport={{ once: false, amount: 0.1 }}
-          className="flex mt-5 md:mt-20 md:space-y-10 space-y-0 md:space-x-0 space-x-10 md:flex-col md:mr-44"
-        >
+        <div className="flex mt-5 md:mt-20 md:space-y-10 space-y-0 md:space-x-0 space-x-10 md:flex-col md:mr-44">
           <Link href={"https://www.linkedin.com/in/jesus-acosta-42647a26a/"}>
             <button
               href="/"
@@ -144,17 +135,8 @@ export default function Contact() {
               Mail
             </span>
           </button>
-        </motion.div>
-        <motion.div
-          initial={{ y: 200, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 0.5,
-            ease: "easeInOut",
-          }}
-          viewport={{ once: false, amount: 0.1 }}
-          className="flex items-center justify-center mt-20"
-        >
+        </div>
+        <div className="flex items-center justify-center mt-20">
           <div className="flex flex-col items-center justify-center w-72 min-h-[350px] p-5 bg-gray-300 shadow-2xl shadow-blue-700 rounded-md md:w-96">
             <form
               action="https://getform.io/f/blljeokb"
@@ -250,7 +232,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
