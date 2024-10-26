@@ -9,7 +9,7 @@ export default function Home() {
   const downloadFile = () => {
     const link = document.createElement("a");
     link.href = "/cvSpanish.pdf"; // Ruta al archivo PDF en la carpeta public
-    link.download = "CV Jesús Acosta.pdf"; // Nombre con el que se descargará
+    link.download = "CV Jesús Acosta Full Stack Web Developer.pdf"; // Nombre con el que se descargará
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
