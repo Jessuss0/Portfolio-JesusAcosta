@@ -1,25 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiCanvas, SiNextdotjs } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiRedux } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { SiVisualstudiocode } from "react-icons/si";
-import { FaNpm } from "react-icons/fa";
-import { SiSequelize } from "react-icons/si";
-import { FaAngular } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { SiCanva } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  IoLogoJavascript,
+  FaReact,
+  RiTailwindCssFill,
+  SiNextdotjs,
+  FaNodeJs,
+  SiExpress,
+  BiLogoPostgresql,
+  SiRedux,
+  SiTypescript,
+  FaGitAlt,
+  FaGithub,
+  SiVisualstudiocode,
+  FaNpm,
+  SiSequelize,
+  FaAngular,
+  SiMongodb,
+  FaBootstrap,
+  FaPython,
+  SiCanva,
+  FaDocker,
+  FaJava,
+  SiNestjs,
+  DiScrum,
+  TbBrandFramerMotion,
+  FaTrello,
+} from "@/components/about/icons";
 import Link from "next/link";
 import sticker from "@/icons/imagenAbout.gif";
 import Image from "next/image";
@@ -52,6 +60,14 @@ const sections = [
         icon: <SiRedux size={35} className="text-purple-900" />,
         name: "Redux",
       },
+      {
+        icon: <FaBootstrap size={35} className="text-purple-600" />,
+        name: "Bootstrap",
+      },
+      {
+        icon: <TbBrandFramerMotion size={35} className="text-purple-600" />,
+        name: "Framer Motion",
+      },
     ],
   },
   {
@@ -59,6 +75,10 @@ const sections = [
     technologies: [
       { icon: <FaNodeJs size={35} className="text-green-800" />, name: "Node" },
       { icon: <SiExpress size={35} className="text-white" />, name: "Express" },
+      {
+        icon: <SiNestjs size={35} className="text-red-800" />,
+        name: "NestJs",
+      },
       {
         icon: <BiLogoPostgresql size={35} className="text-blue-400" />,
         name: "PostgreSQL",
@@ -81,12 +101,12 @@ const sections = [
         name: "MongoDB",
       },
       {
-        icon: <FaBootstrap size={35} className="text-purple-600" />,
-        name: "Bootstrap",
-      },
-      {
         icon: <FaPython size={35} className="text-blue-400" />,
         name: "Python",
+      },
+      {
+        icon: <FaJava size={35} className="text-orange-500" />,
+        name: "Java",
       },
     ],
   },
@@ -103,6 +123,18 @@ const sections = [
       {
         icon: <SiCanva size={35} className=" text-cyan-500" />,
         name: "Canva",
+      },
+      {
+        icon: <FaDocker size={35} className=" text-blue-500" />,
+        name: "Docker",
+      },
+      {
+        icon: <FaTrello size={35} className=" text-cyan-600" />,
+        name: "Trello",
+      },
+      {
+        icon: <DiScrum size={35} className=" text-blue-500" />,
+        name: "Scrum",
       },
     ],
   },
