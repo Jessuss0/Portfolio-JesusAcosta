@@ -24,7 +24,7 @@ export default function Experience() {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{
-            duration:0.6,
+            duration: 0.6,
             ease: "easeInOut",
           }}
           viewport={{ once: false, amount: 0.2 }}
@@ -36,42 +36,42 @@ export default function Experience() {
             Completed.
           </p>
         </motion.div>
-          <motion.div
-            className=" mt-20 xl:mt-0 xl:flex xl:justify-center xl:items-center flex flex-col-reverse md:flex-row bg-gradient-to-t from-orange-800 to-blue-800 p-8 md:w-[800px] lg:w-[1000px] rounded-xl"
-            initial={{ x: 200, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{
-              duration: 0.6,
-              ease: "easeInOut",
-            }}
-            viewport={{ once: false, amount: 0.2 }}
-          >
-            <div className="md:ml-5 md:mr-auto">
-              <h2 className="text-2xl font-medium">
-                Front-end Developer - Freelance
-              </h2>
-              <p>Remote | Feb. 2024 - April. 2024</p>
-              <ul className="list-disc list-inside">
-                <li className="my-3">
-                  Implemented and enhanced key Front-end functionalities.
-                </li>
-                <li className="my-3">Responsive designs.</li>
-                <li className="my-3">Next.js, TypeScript and Tailwind CSS.</li>
-                <li className="my-3">
-                  Various user authentication and management features, including
-                  password handling and account recovery.
-                </li>
-              </ul>
-              <div className="w-full flex justify-center md:block">
-                <button class="bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-                  <span class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                  FULLTIME
-                </button>
-              </div>
+        <motion.div
+          className=" mt-20 xl:mt-0 xl:flex xl:justify-center xl:items-center flex flex-col-reverse md:flex-row bg-gradient-to-t from-orange-800 to-blue-800 p-8 md:w-[800px] lg:w-[1000px] rounded-xl"
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeInOut",
+          }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <div className="md:ml-5 md:mr-auto">
+            <h2 className="text-2xl font-medium">
+              Front-end Developer - Freelance
+            </h2>
+            <p>Remote | Feb. 2024 - April. 2024</p>
+            <ul className="list-disc list-inside">
+              <li className="my-3">
+                Implemented and enhanced key Front-end functionalities.
+              </li>
+              <li className="my-3">Responsive designs.</li>
+              <li className="my-3">Next.js, TypeScript and Tailwind CSS.</li>
+              <li className="my-3">
+                Various user authentication and management features, including
+                password handling and account recovery.
+              </li>
+            </ul>
+            <div className="w-full flex justify-center md:block">
+              <button class="bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                FULLTIME
+              </button>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
+    </div>
   );
 }
 

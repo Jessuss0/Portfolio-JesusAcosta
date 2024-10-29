@@ -5,12 +5,32 @@ import imageShoes from "@/icons/Shoes.png";
 import imageFreelance from "@/icons/freelance.jpg";
 import imagepf1 from "@/icons/pf1.png";
 import imagenpi from "@/icons/pi.png";
+import imageVorhealth from "@/icons/Vorhealth.png";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 export default function Projects() {
   const projectsData = [
+    {
+      image: imageVorhealth,
+      projectName: "Vorhealth Web",
+      projectDescription:
+        "Group web development project for the startup Vorhealth, featuring a landing page with sections about the team, a company description, and a contact area.",
+      projectTech: [
+        "Next.js",
+        "Javascript",
+        "React",
+        "TailwindCSS",
+        "Docker",
+        "Framer Motion",
+      ],
+      stylesTech: " bg-blue-700",
+      projectExternalLinks: {
+        github: "https://github.com/Vorhealth",
+        externalLink: "https://vorhealth-web.vercel.app/",
+      },
+    },
     {
       image: imageShoes,
       projectName: "ShoesOnTrack",
