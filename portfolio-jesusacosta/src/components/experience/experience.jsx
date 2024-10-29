@@ -32,7 +32,7 @@ export default function Experience() {
           <p class="text-white text-center xl:text-left font-bold text-xl leading-10 md:text-2xl sm:leading-[46px] md:leading-[56px] xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
             More that 1 year experience as a <br />
             <span className=" text-blue-900">Full Stack Web Developer </span>
-            and 5<span className=" text-orange-700"> Projects </span>
+            and 7<span className=" text-orange-700"> Projects </span>
             Completed.
           </p>
         </motion.div>
