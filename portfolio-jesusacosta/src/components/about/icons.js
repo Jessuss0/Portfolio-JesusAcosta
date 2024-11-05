@@ -6,12 +6,8 @@ export {
   FaGitAlt,
   FaGithub,
   FaNpm,
-  FaAngular,
-  FaBootstrap,
-  FaPython,
   FaDocker,
   FaJava,
-  FaTrello,
 } from "react-icons/fa";
 export { IoLogoJavascript } from "react-icons/io5";
 export { RiTailwindCssFill } from "react-icons/ri";
@@ -25,8 +21,7 @@ export {
   SiSequelize,
   SiMongodb,
   SiNestjs,
-  SiCanva,
+  SiSpring,
 } from "react-icons/si";
 export { BiLogoPostgresql } from "react-icons/bi";
-export { DiScrum } from "react-icons/di";
 export { TbBrandFramerMotion } from "react-icons/tb";

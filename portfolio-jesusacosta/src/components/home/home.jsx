@@ -84,7 +84,7 @@ export default function Home() {
         <button
           href="/"
           onClick={downloadFile}
-          class="group max-h-10 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500"
+          class="group max-h-10 flex justify-center p-2 rounded-md drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-[20%] transition-all duration-500"
         >
           <Image
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert "
@@ -94,8 +94,8 @@ export default function Home() {
             height={25}
             priority
           />
+          Download CV
           <span class="absolute opacity-0 group-hover:opacity-100 group-hover:text-sm group-hover:-translate-y-10 duration-700 text-black">
-            CV
           </span>
         </button>
       </div>

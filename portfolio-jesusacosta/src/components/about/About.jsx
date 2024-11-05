@@ -16,17 +16,12 @@ import {
   SiVisualstudiocode,
   FaNpm,
   SiSequelize,
-  FaAngular,
   SiMongodb,
-  FaBootstrap,
-  FaPython,
-  SiCanva,
   FaDocker,
   FaJava,
   SiNestjs,
-  DiScrum,
   TbBrandFramerMotion,
-  FaTrello,
+  SiSpring,
 } from "@/components/about/icons";
 import Link from "next/link";
 import sticker from "@/icons/imagenAbout.gif";
@@ -61,10 +56,6 @@ const sections = [
         name: "Redux",
       },
       {
-        icon: <FaBootstrap size={35} className="text-purple-600" />,
-        name: "Bootstrap",
-      },
-      {
         icon: <TbBrandFramerMotion size={35} className="text-purple-600" />,
         name: "Framer Motion",
       },
@@ -93,20 +84,16 @@ const sections = [
     title: "Learning",
     technologies: [
       {
-        icon: <FaAngular size={35} className="text-red-600" />,
-        name: "Angular",
-      },
-      {
         icon: <SiMongodb size={35} className="text-green-800" />,
         name: "MongoDB",
       },
       {
-        icon: <FaPython size={35} className="text-blue-400" />,
-        name: "Python",
+        icon: <FaJava size={35} className="text-red-500" />,
+        name: "Java",
       },
       {
-        icon: <FaJava size={35} className="text-orange-500" />,
-        name: "Java",
+        icon: <SiSpring size={35} className="text-lime-400" />,
+        name: "Spring",
       },
     ],
   },
@@ -121,20 +108,8 @@ const sections = [
       },
       { icon: <FaNpm size={35} className="text-orange-900" />, name: "NPM" },
       {
-        icon: <SiCanva size={35} className=" text-cyan-500" />,
-        name: "Canva",
-      },
-      {
         icon: <FaDocker size={35} className=" text-blue-500" />,
         name: "Docker",
-      },
-      {
-        icon: <FaTrello size={35} className=" text-cyan-600" />,
-        name: "Trello",
-      },
-      {
-        icon: <DiScrum size={35} className=" text-blue-500" />,
-        name: "Scrum",
       },
     ],
   },
