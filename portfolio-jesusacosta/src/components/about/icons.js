@@ -24,4 +24,3 @@ export {
   SiSpring,
 } from "react-icons/si";
 export { BiLogoPostgresql } from "react-icons/bi";
-export { TbBrandFramerMotion } from "react-icons/tb";

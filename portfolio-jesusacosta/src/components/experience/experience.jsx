@@ -29,7 +29,7 @@ export default function Experience() {
           }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <p class="text-white text-center xl:text-left font-bold text-xl leading-10 md:text-2xl sm:leading-[46px] md:leading-[56px] xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
+          <p className="text-white text-center xl:text-left font-bold text-xl leading-10 md:text-2xl sm:leading-[46px] md:leading-[56px] xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
             More that 1 year experience as a <br />
             <span className=" text-blue-900">Full Stack Web Developer </span>
             and 6<span className=" text-orange-700"> Projects </span>
@@ -63,8 +63,8 @@ export default function Experience() {
               </li>
             </ul>
             <div className="w-full flex justify-center md:block">
-              <button class="bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
-                <span class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+              <button className="bg-neutral-950 text-neutral-400 border border-neutral-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                <span className="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                 FULLTIME
               </button>
             </div>
@@ -74,5 +74,3 @@ export default function Experience() {
     </div>
   );
 }
-
-//URL: https://www.linkedin.com/feed/update/urn:li:activity:7207422504972218368/

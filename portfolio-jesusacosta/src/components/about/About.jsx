@@ -20,7 +20,6 @@ import {
   FaDocker,
   FaJava,
   SiNestjs,
-  TbBrandFramerMotion,
   SiSpring,
 } from "@/components/about/icons";
 import Link from "next/link";
@@ -54,10 +53,6 @@ const sections = [
       {
         icon: <SiRedux size={35} className="text-purple-900" />,
         name: "Redux",
-      },
-      {
-        icon: <TbBrandFramerMotion size={35} className="text-purple-600" />,
-        name: "Framer Motion",
       },
     ],
   },
@@ -135,7 +130,7 @@ export default function About() {
           </h2>
         </motion.div>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
-          <p className="md:text-2xl text-base font-bold md:p-24 p-10 text-gray-300 md:w-[50%]">
+          <p className="md:text-2xl text-base font-bold md:p-24 p-10 text-gray-400 md:w-[50%]">
             I am 23 years old, living in San Nicolas de los Arroyos, Buenos
             Aires province. I've been passionate about technology and video
             games since I was very young, which led me to enter the world of
@@ -172,10 +167,10 @@ export default function About() {
           {sections.map((section, sectionIndex) => (
             <div
               key={sectionIndex}
-              className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px]"
+              className="text-center bg-gradient-to-t from-slate-800 to-black p-4 min-h-[300px] rounded-xl"
             >
               <h4 className="text-2xl font-semibold mb-4">{section.title}</h4>
-              <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
                 {section.technologies.map((tech, techIndex) => (
                   <div key={techIndex} className="flex flex-col items-center">
                     {tech.icon}

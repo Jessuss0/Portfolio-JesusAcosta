@@ -10,7 +10,7 @@ const projectsData = [
     image: soploDeVida,
     projectName: "Soplo De Vida",
     projectDescription:
-      "Group web development project for the startup Vorhealth, featuring a landing page with sections about the team, a company description, and a contact area.",
+      "Soplo de Vida is a shelter that cares for, sponsors, and relocates animals. Its mission is to give them a new chance at life in loving homes.",
     projectTech: ["Next.js", "Javascript", "React", "TailwindCSS"],
     stylesTech: "bg-purple-400",
     projectExternalLinks: {
