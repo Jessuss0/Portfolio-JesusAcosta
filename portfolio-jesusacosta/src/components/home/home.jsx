@@ -8,7 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function Home() {
   const downloadFile = () => {
     const link = document.createElement("a");
-    link.href = "/cvSpanish.pdf";
+    link.href = "/CV Jesús Acosta Full Stack Web Developer.pdf";
     link.download = "CV Jesús Acosta Full Stack Web Developer.pdf";
     document.body.appendChild(link);
     link.click();
@@ -37,9 +37,6 @@ export default function Home() {
             repeat={Infinity}
           />
         </div>
-        <p className="mb-6 font-black text-gray-500 text-sm md:text-lg">
-        Specialized in React (Next.js), Tailwind CSS, and JavaScript/TypeScript, delivering modern and efficient web solutions.
-        </p>
       </div>
       <div className="flex space-x-3">
         <Link href={"https://www.linkedin.com/in/jesus-acosta-42647a26a/"}>

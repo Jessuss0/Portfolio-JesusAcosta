@@ -131,17 +131,17 @@ export default function About() {
         </motion.div>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
           <p className="md:text-2xl text-base font-bold md:p-24 p-10 text-gray-400 md:w-[50%]">
-            I am 23 years old, living in San Nicolas de los Arroyos, Buenos
-            Aires province. I've been passionate about technology and video
-            games since I was very young, which led me to enter the world of
-            programming.
+            Hello, I'm Jesús Acosta, 24 years old, living in San Nicolás de los
+            Arroyos, Buenos Aires Province. I am a full-stack web developer
+            specializing in React (Next.js), TailwindCSS, and
+            JavaScript/TypeScript, delivering modern and efficient web
+            solutions.
             <br />
             <br />
-            Besides my technical skills, I am aware of the importance of soft
-            skills in any work environment. I was chosen as the best classmate
-            in both primary and secondary school and recognized by the Rotary
-            Club. Therefore, if you need a professional who can easily integrate
-            into your team, provide solutions, and listen, don't hesitate to{" "}
+            As a developer, my focus is on creating software that is easy to
+            use, scalable, and secure. Therefore, if you need a professional who
+            can easily integrate into your team, provide solutions, and listen,
+            don't hesitate to{" "}
             <Link href={"#Contact"}>
               <span className="md:text-2xl text-xl text-blue-600 underline">
                 contact me!
