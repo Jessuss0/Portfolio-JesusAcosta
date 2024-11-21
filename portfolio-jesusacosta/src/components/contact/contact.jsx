@@ -42,8 +42,8 @@ export default function Contact() {
 
   const downloadFile = () => {
     const link = document.createElement("a");
-    link.href = "/cvSpanish.pdf"; // Ruta al archivo PDF en la carpeta public
-    link.download = "CV Jesús Acosta.pdf"; // Nombre con el que se descargará
+    link.href = "/cvSpanish.pdf";
+    link.download = "CV Jesús Acosta.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
