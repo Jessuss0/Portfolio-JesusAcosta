@@ -82,7 +82,7 @@ export default function Experience() {
           viewport={{ once: false, amount: 0.2 }}
         >
           <p className="text-white text-center xl:text-left font-bold text-xl leading-10 md:text-2xl sm:leading-[46px] md:leading-[56px] xl:leading-[70px] xl:text-[50px] 2xl:text-[78px] 2xl:leading-[120px]">
-            More than 1 year experience as a <br />
+            More than 2 year experience as a <br />
             <span className={colors.secondary}>Full Stack Web Developer </span>
             and 6<span className={colors.primary}> Projects </span>
             Completed.
