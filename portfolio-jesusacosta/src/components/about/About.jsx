@@ -131,8 +131,7 @@ export default function About() {
         </motion.div>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
           <p className="md:text-2xl text-base font-bold md:p-24 p-10 text-gray-400 md:w-[50%]">
-            Hello, I'm Jesús Acosta, 24 years old, living in San Nicolás de los
-            Arroyos, Buenos Aires Province. I am a full-stack web developer
+            Hello, I'm Jesús Acosta, 24 years old, living in Cordoba, Argentina. <br/> I am a full-stack web developer
             specializing in React (Next.js), TailwindCSS, and
             JavaScript/TypeScript, delivering modern and efficient web
             solutions.
