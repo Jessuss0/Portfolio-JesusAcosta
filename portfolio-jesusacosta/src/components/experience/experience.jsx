@@ -30,7 +30,7 @@ export default function Experience() {
     });
     setCardInfo({
       title: "Full-stack web developer - Vorhealth",
-      period: "Remote | Sep. 2024 - Current",
+      period: "Remote | Sep. 2024 - Nov. 2024 ",
       details: [
         "Full-Stack Work: Built and maintained apps with Next.js, React and Tailwind CSS.",
         "Responsive designs.",
