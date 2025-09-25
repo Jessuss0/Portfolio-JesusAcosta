@@ -6,14 +6,14 @@ import curriculumImage from "@/icons/curriculum.png";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
-  const downloadFile = () => {
-    const link = document.createElement("a");
-    link.href = "/CV Jesús Acosta Full Stack Web Developer.pdf";
-    link.download = "CV Jesús Acosta Full Stack Web Developer.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const downloadFile = () => {
+  //   const link = document.createElement("a");
+  //   link.href = "/CV Jesús Acosta Full Stack Web Developer.pdf";
+  //   link.download = "CV Jesús Acosta Full Stack Web Developer.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-start p-8 md:ml-14">
@@ -78,7 +78,7 @@ export default function Home() {
             </svg>
           </button>
         </Link>
-        <button
+        {/* <button
           href="/"
           onClick={downloadFile}
           className="group max-h-10 flex justify-center p-2 rounded-xl drop-shadow-xl bg-gradient-to-r from-cyan-600 to-blue-950 text-white font-semibold hover:translate-y-3 hover:rounded-2xl transition-all duration-500"
@@ -93,7 +93,7 @@ export default function Home() {
           />
           Download CV
           <span className="absolute opacity-0 group-hover:opacity-100 group-hover:text-sm group-hover:-translate-y-10 duration-700 text-black"></span>
-        </button>
+        </button> */}
       </div>
     </div>
   );
